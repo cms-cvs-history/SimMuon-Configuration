@@ -1,5 +1,9 @@
 
    # Muon Digitization (CSC, DT, RPC electronics responce)
+   
+   # this is essential as of 140-cycle (changes in Geometry)
+   #
+   include "Geometry/MuonNumbering/data/muonNumberingInitialization.cfi"
 
    # this holds CSC geom service, as need for CSC digi's
    # and the digitizer itself
