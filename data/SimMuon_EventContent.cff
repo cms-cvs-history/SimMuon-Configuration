@@ -1,21 +1,20 @@
 #Full Event content 
 block SimMuonFEVT = {
-  untracked vstring outputCommands = {
-#save digis
-	"keep *_muonCSCDigis_*_*",
-	"keep *_muonDTDigis_*_*",
-	"keep *_muonRPCDigis_*_*"
-  }		
+    untracked vstring outputCommands = {
+	#save digis sim link and trigger infos
+	"keep StripDigiSimLinkedmDetSetVector_muonCSCDigis_*_*"
+	"keep CSCDetIdCSCComparatorDigiMuonDigiCollection_muonCSCDigis_*_*"
+    }		
 }	
 
 #RECO content
 block SimMuonRECO = {
-  untracked vstring outputCommands = {
-  }		
+    untracked vstring outputCommands = {
+    }		
 }	
 
 #AOD content
 block SimMuonAOD = {
-  untracked vstring outputCommands = {
-  }		
+    untracked vstring outputCommands = {
+    }		
 }	
