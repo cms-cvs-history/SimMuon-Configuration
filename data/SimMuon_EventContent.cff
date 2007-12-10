@@ -2,7 +2,7 @@
 block SimMuonFEVT = {
     untracked vstring outputCommands = {
 	#save digis sim link and trigger infos
-	"keep StripDigiSimLinkedmDetSetVector_muonCSCDigis_*_*"
+	"keep StripDigiSimLinkedmDetSetVector_muonCSCDigis_*_*",
 	"keep CSCDetIdCSCComparatorDigiMuonDigiCollection_muonCSCDigis_*_*"
     }		
 }	
