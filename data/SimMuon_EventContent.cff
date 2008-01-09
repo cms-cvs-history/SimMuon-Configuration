@@ -7,6 +7,16 @@ block SimMuonFEVT = {
     }		
 }	
 
+#Full Event content with DIGI
+block SimMuonFEVTDIGI = {
+    untracked vstring outputCommands = {
+	#save digis
+	"keep *_muonCSCDigis_*_*",
+	"keep *_muonDTDigis_*_*",
+	"keep *_muonRPCDigis_*_*"
+    }		
+}	
+
 #RECO content
 block SimMuonRECO = {
     untracked vstring outputCommands = {
