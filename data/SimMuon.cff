@@ -1,33 +1,16 @@
 
    # Muon Digitization (CSC, DT, RPC electronics responce)
    
-   # this is essential as of 140-cycle (changes in Geometry)
+   # CSC digitizer
    #
-   include "Geometry/MuonNumbering/data/muonNumberingInitialization.cfi"
-
-   # this holds CSC geom service, as need for CSC digi's
-   # and the digitizer itself
-   #
-   include "Geometry/CSCGeometry/data/cscGeometry.cfi"
    include "SimMuon/CSCDigitizer/data/muoncscdigi.cfi"
 
-   # Muon DT digi's
-
-   # this holds geom.service as needed by DT digi's
-   # and the digitizer itself
+   # DT digitizer
    #
-   include "Geometry/DTGeometry/data/dtGeometry.cfi"
    include "SimMuon/DTDigitizer/data/muondtdigi.cfi"
 
-   # this holds geom.service for the RPC digi's
-   # the digitizer itself still needs to be given explicitely
-   # but since it has no parameters, it doesn't matter...
-   # only maybe the label should be agreed upon...
-   #
-   # Note : as of May 3, 2006, Muon/RPC digi's *hang*
-   #        thus it's been taken out of the path...
+   # RPC digitizer
    # 
-   include "Geometry/RPCGeometry/data/rpcGeometry.cfi" 
    include "SimMuon/RPCDigitizer/data/muonrpcdigi.cfi"
 
    sequence muonDigi = { muonCSCDigis &  muonDTDigis & muonRPCDigis }
