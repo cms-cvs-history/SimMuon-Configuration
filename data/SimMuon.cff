@@ -3,7 +3,7 @@
    
    # CSC digitizer
    #
-   include "SimMuon/CSCDigitizer/data/muoncscdigi.cfi"
+   include "SimMuon/CSCDigitizer/data/muonCSCDigis.cfi"
 
    # DT digitizer
    #
