@@ -2,8 +2,8 @@
 block SimMuonFEVT = {
     untracked vstring outputCommands = {
 	#save digis sim link and trigger infos
-	"keep StripDigiSimLinkedmDetSetVector_muonCSCDigis_*_*",
-	"keep CSCDetIdCSCComparatorDigiMuonDigiCollection_muonCSCDigis_*_*"
+	"keep StripDigiSimLinkedmDetSetVector_simMuonCSCDigis_*_*",
+	"keep CSCDetIdCSCComparatorDigiMuonDigiCollection_simMuonCSCDigis_*_*"
     }		
 }	
 
@@ -11,9 +11,9 @@ block SimMuonFEVT = {
 block SimMuonFEVTDIGI = {
     untracked vstring outputCommands = {
 	#save digis
-	"keep *_muonCSCDigis_*_*",
-	"keep *_muonDTDigis_*_*",
-	"keep *_muonRPCDigis_*_*"
+	"keep *_simMuonCSCDigis_*_*",
+	"keep *_simMuonDTDigis_*_*",
+	"keep *_simMuonRPCDigis_*_*"
     }		
 }	
 

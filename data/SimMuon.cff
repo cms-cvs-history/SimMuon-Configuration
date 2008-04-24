@@ -13,6 +13,6 @@
    # 
    include "SimMuon/RPCDigitizer/data/muonrpcdigi.cfi"
 
-   sequence muonDigi = { muonCSCDigis &  muonDTDigis & muonRPCDigis }
+   sequence muonDigi = { simMuonCSCDigis &  simMuonDTDigis & simMuonRPCDigis }
    
    
